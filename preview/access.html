@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>アクセス | 中村徹</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&display=swap" rel="stylesheet">
+<link href="css/style.css" rel="stylesheet" media="all">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="header-inner">
+    <div class="brand">
+      <span class="brand-sub">東京都市大学 情報工学部 情報科学科<br>中村 徹 准教授</span>
+    </div>
+    <button class="nav-toggle" id="navToggle" aria-label="メニューを開く" aria-expanded="false">
+      <span></span>
+    </button>
+    <nav class="main-nav" id="mainNav">
+      <ul>
+        <li><a href="index.html">ホーム</a></li>
+        <li><a href="portfolio.html">経歴等</a></li>
+        <li><a href="research.html">研究内容</a></li>
+        <li><a href="members.html">メンバー</a></li>
+        <li><a href="publications.html">研究業績</a></li>
+        <li><a href="access.html" class="active">アクセス</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<div class="page-hero">
+  <div class="page-hero-inner">
+    <p class="breadcrumb"><a href="index.html">ホーム</a> / アクセス</p>
+    <h1>アクセス</h1>
+  </div>
+</div>
+
+<section class="section prose">
+
+  <h2>連絡先</h2>
+  <blockquote>
+    <dl class="contact-card">
+      <div>
+        <dt>住所</dt>
+        <dd>東京都世田谷区玉堤1-28-1<br>東京都市大学　世田谷キャンパス<br>3号館4F　計算機ソフトウェア研究室</dd>
+      </div>
+      <div>
+        <dt>E-mail</dt>
+        <dd>tonakamu [at] tcu.ac.jp</dd>
+      </div>
+    </dl>
+  </blockquote>
+
+  <h2>アクセスマップ</h2>
+  <figure class="center">
+    <img src="../access_setagaya_map.png" width="700" height="700" alt="世田谷キャンパスへのアクセスマップ">
+  </figure>
+  <figure class="center">
+    <img src="../campusMAP_SC.png" width="700" height="350" alt="世田谷キャンパスマップ">
+  </figure>
+
+</section>
+
+
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div>東京都市大学 情報工学部 情報科学科<br>中村 徹 准教授</div>
+  </div>
+</footer>
+
+<script>
+  var navToggle = document.getElementById('navToggle');
+  var mainNav = document.getElementById('mainNav');
+  navToggle.addEventListener('click', function () {
+    var isOpen = mainNav.classList.toggle('open');
+    navToggle.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+  });
+</script>
+
+</body>
+</html>

@@ -1,0 +1,124 @@
+<svg viewBox="0 0 760 746" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f7f8fc"/>
+      <stop offset="100%" stop-color="#eef1fb"/>
+    </linearGradient>
+
+    <linearGradient id="outerFill" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#e3ccfa"/>
+      <stop offset="100%" stop-color="#c79af5"/>
+    </linearGradient>
+    <linearGradient id="outerStroke" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#8b3ff2"/>
+      <stop offset="100%" stop-color="#5b21b6"/>
+    </linearGradient>
+
+    <linearGradient id="innerFill" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#bcd6ff"/>
+      <stop offset="100%" stop-color="#8fb4ff"/>
+    </linearGradient>
+    <linearGradient id="innerStroke" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#123fae"/>
+      <stop offset="100%" stop-color="#1550ff"/>
+    </linearGradient>
+
+    <linearGradient id="anshinPill" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#7c3aed"/>
+      <stop offset="100%" stop-color="#9d5cff"/>
+    </linearGradient>
+    <linearGradient id="anzenPill" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#123fae"/>
+      <stop offset="100%" stop-color="#2f6bff"/>
+    </linearGradient>
+    <linearGradient id="outerPillTop" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#7c3aed"/>
+      <stop offset="100%" stop-color="#b58bf5"/>
+    </linearGradient>
+
+    <filter id="softShadow" x="-40%" y="-40%" width="180%" height="180%">
+      <feDropShadow dx="0" dy="10" stdDeviation="14" flood-color="#1a1d29" flood-opacity="0.16"/>
+    </filter>
+    <filter id="cardShadow" x="-60%" y="-60%" width="220%" height="220%">
+      <feDropShadow dx="0" dy="6" stdDeviation="8" flood-color="#101f4d" flood-opacity="0.14"/>
+    </filter>
+    <filter id="pillGlowPurple" x="-60%" y="-60%" width="220%" height="220%">
+      <feDropShadow dx="0" dy="8" stdDeviation="10" flood-color="#7c3aed" flood-opacity="0.4"/>
+    </filter>
+    <filter id="pillGlowBlue" x="-60%" y="-60%" width="220%" height="220%">
+      <feDropShadow dx="0" dy="8" stdDeviation="10" flood-color="#1a3fd6" flood-opacity="0.4"/>
+    </filter>
+  </defs>
+
+  <rect width="760" height="746" fill="url(#bg)"/>
+
+  <ellipse cx="380" cy="373" rx="350" ry="353" fill="url(#outerFill)" stroke="url(#outerStroke)" stroke-width="5" filter="url(#softShadow)"/>
+
+  <ellipse cx="380" cy="506" rx="195" ry="190" fill="url(#innerFill)" stroke="url(#innerStroke)" stroke-width="5" filter="url(#cardShadow)"/>
+
+  <g filter="url(#pillGlowPurple)">
+    <rect x="295" y="50" width="170" height="56" rx="28" fill="url(#anshinPill)"/>
+  </g>
+  <text x="380" y="88" text-anchor="middle" font-family="'Noto Sans JP', sans-serif" font-size="28" font-weight="700" fill="#ffffff">安心</text>
+
+  <g filter="url(#pillGlowBlue)">
+    <rect x="310" y="346" width="140" height="50" rx="25" fill="url(#anzenPill)"/>
+  </g>
+  <text x="380" y="381" text-anchor="middle" font-family="'Noto Sans JP', sans-serif" font-size="28" font-weight="700" fill="#ffffff">安全</text>
+
+  <g font-family="'Noto Sans JP', sans-serif" font-weight="700" fill="#1a1d29">
+
+    <g filter="url(#cardShadow)">
+      <rect x="160" y="136" width="210" height="60" rx="16" fill="#ffffff"/>
+      <rect x="160" y="136" width="210" height="5" rx="2.5" fill="url(#outerPillTop)"/>
+    </g>
+    <text x="265" y="176" text-anchor="middle" font-size="28">プライバシー</text>
+
+    <g filter="url(#cardShadow)">
+      <rect x="390" y="136" width="210" height="60" rx="16" fill="#ffffff"/>
+      <rect x="390" y="136" width="210" height="5" rx="2.5" fill="url(#outerPillTop)"/>
+    </g>
+    <text x="495" y="176" text-anchor="middle" font-size="28">使いやすさ</text>
+
+    <g filter="url(#cardShadow)">
+      <rect x="135" y="226" width="150" height="60" rx="16" fill="#ffffff"/>
+      <rect x="135" y="226" width="150" height="5" rx="2.5" fill="url(#outerPillTop)"/>
+    </g>
+    <text x="210" y="266" text-anchor="middle" font-size="28">透明性</text>
+
+    <g filter="url(#cardShadow)">
+      <rect x="305" y="226" width="150" height="60" rx="16" fill="#ffffff"/>
+      <rect x="305" y="226" width="150" height="5" rx="2.5" fill="url(#outerPillTop)"/>
+    </g>
+    <text x="380" y="266" text-anchor="middle" font-size="28">信憑性</text>
+
+    <g filter="url(#cardShadow)">
+      <rect x="475" y="226" width="150" height="60" rx="16" fill="#ffffff"/>
+      <rect x="475" y="226" width="150" height="5" rx="2.5" fill="url(#outerPillTop)"/>
+    </g>
+    <text x="550" y="266" text-anchor="middle" font-size="28">公平性</text>
+
+  </g>
+
+  <g font-family="'Noto Sans JP', sans-serif" font-weight="700" fill="#101f4d">
+
+    <g filter="url(#cardShadow)">
+      <rect x="240" y="426" width="280" height="60" rx="16" fill="#ffffff"/>
+      <rect x="240" y="426" width="280" height="5" rx="2.5" fill="url(#innerStroke)"/>
+    </g>
+    <text x="380" y="466" text-anchor="middle" font-size="28">情報セキュリティ</text>
+
+    <g filter="url(#cardShadow)">
+      <rect x="215" y="516" width="330" height="60" rx="16" fill="#ffffff"/>
+      <rect x="215" y="516" width="330" height="5" rx="2.5" fill="url(#innerStroke)"/>
+    </g>
+    <text x="380" y="556" text-anchor="middle" font-size="28">サイバーセキュリティ</text>
+
+    <g filter="url(#cardShadow)">
+      <rect x="280" y="606" width="200" height="60" rx="16" fill="#ffffff"/>
+      <rect x="280" y="606" width="200" height="5" rx="2.5" fill="url(#innerStroke)"/>
+    </g>
+    <text x="380" y="646" text-anchor="middle" font-size="28">暗号理論</text>
+
+  </g>
+</svg>

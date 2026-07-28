@@ -1,0 +1,100 @@
+<svg viewBox="0 0 900 550" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0b1230"/>
+      <stop offset="45%" stop-color="#141e52"/>
+      <stop offset="100%" stop-color="#241457"/>
+    </linearGradient>
+
+    <radialGradient id="coreGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#fff6df" stop-opacity="0.95"/>
+      <stop offset="35%" stop-color="#ffd9a0" stop-opacity="0.55"/>
+      <stop offset="100%" stop-color="#ffd9a0" stop-opacity="0"/>
+    </radialGradient>
+
+    <radialGradient id="blobViolet" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#a56bff" stop-opacity="0.85"/>
+      <stop offset="100%" stop-color="#a56bff" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="blobBlue" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#4f7dff" stop-opacity="0.8"/>
+      <stop offset="100%" stop-color="#4f7dff" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="blobTeal" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#4fd6c8" stop-opacity="0.6"/>
+      <stop offset="100%" stop-color="#4fd6c8" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="blobPink" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#ff8fc6" stop-opacity="0.5"/>
+      <stop offset="100%" stop-color="#ff8fc6" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="blobGold" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#ffcf7a" stop-opacity="0.55"/>
+      <stop offset="100%" stop-color="#ffcf7a" stop-opacity="0"/>
+    </radialGradient>
+
+    <filter id="soft" x="-60%" y="-60%" width="220%" height="220%">
+      <feGaussianBlur stdDeviation="26"/>
+    </filter>
+    <filter id="soft2" x="-80%" y="-80%" width="260%" height="260%">
+      <feGaussianBlur stdDeviation="46"/>
+    </filter>
+    <filter id="grain">
+      <feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" seed="7" result="n"/>
+      <feColorMatrix in="n" type="matrix"
+        values="0 0 0 0 1  0 0 0 0 1  0 0 0 0 1  0 0 0 0.035 0"/>
+    </filter>
+  </defs>
+
+  <rect width="900" height="550" fill="url(#bgGrad)"/>
+
+  <g style="mix-blend-mode:screen">
+    <ellipse cx="700" cy="120" rx="240" ry="200" fill="url(#blobBlue)" filter="url(#soft2)"/>
+    <ellipse cx="160" cy="420" rx="230" ry="190" fill="url(#blobViolet)" filter="url(#soft2)"/>
+    <ellipse cx="470" cy="120" rx="170" ry="120" fill="url(#blobPink)" filter="url(#soft)"/>
+    <ellipse cx="720" cy="440" rx="180" ry="150" fill="url(#blobTeal)" filter="url(#soft)"/>
+    <ellipse cx="230" cy="150" rx="140" ry="110" fill="url(#blobGold)" filter="url(#soft)"/>
+  </g>
+
+  <path d="M60 340 C 220 260, 300 420, 460 340 S 700 250, 840 330"
+        fill="none" stroke="#ffffff" stroke-width="2" opacity="0.10" stroke-linecap="round" filter="url(#soft)"/>
+  <path d="M100 460 C 260 400, 360 500, 520 430 S 760 380, 840 440"
+        fill="none" stroke="#ffd9a0" stroke-width="2" opacity="0.12" stroke-linecap="round" filter="url(#soft)"/>
+  <path d="M40 150 C 200 90, 300 180, 440 110 S 680 60, 860 130"
+        fill="none" stroke="#a56bff" stroke-width="2" opacity="0.14" stroke-linecap="round" filter="url(#soft)"/>
+
+  <g style="mix-blend-mode:screen">
+    <circle cx="450" cy="290" r="230" fill="url(#coreGlow)" filter="url(#soft2)"/>
+  </g>
+
+  <g transform="translate(450,290)" stroke-linecap="round" fill="none">
+    <path d="M0 -150 C 60 -130, 95 -80, 90 -20 C 85 55, 45 110, 0 145
+             C -45 110, -85 55, -90 -20 C -95 -80, -60 -130, 0 -150 Z"
+          fill="#ffffff" opacity="0.94"/>
+    <path d="M0 -150 C 60 -130, 95 -80, 90 -20 C 85 55, 45 110, 0 145
+             C -45 110, -85 55, -90 -20 C -95 -80, -60 -130, 0 -150 Z"
+          fill="none" stroke="#fff6df" stroke-width="10" opacity="0.5" filter="url(#soft)"/>
+
+    <path d="M-46 5 C -30 40, -12 55, 0 58 C 26 30, 50 -10, 62 -46"
+          stroke="#1a3fd6" stroke-width="9" opacity="0.85"/>
+    <path d="M-46 5 C -30 40, -12 55, 0 58 C 26 30, 50 -10, 62 -46"
+          stroke="#7c3aed" stroke-width="3" opacity="0.5"/>
+  </g>
+
+  <g fill="#ffffff">
+    <circle cx="270" cy="90" r="3" opacity="0.55"/>
+    <circle cx="640" cy="70" r="2.5" opacity="0.5"/>
+    <circle cx="760" cy="230" r="3" opacity="0.5"/>
+    <circle cx="130" cy="250" r="2.5" opacity="0.45"/>
+    <circle cx="600" cy="470" r="3" opacity="0.5"/>
+    <circle cx="330" cy="480" r="2.5" opacity="0.45"/>
+    <circle cx="820" cy="380" r="2" opacity="0.4"/>
+    <circle cx="70" cy="480" r="2" opacity="0.4"/>
+  </g>
+
+  <path d="M180 70 C 250 40, 320 60, 360 30" stroke="#ffffff" stroke-width="1.5" opacity="0.18" fill="none" stroke-linecap="round"/>
+  <path d="M600 500 C 660 470, 720 490, 770 460" stroke="#ffffff" stroke-width="1.5" opacity="0.16" fill="none" stroke-linecap="round"/>
+  <path d="M760 130 C 800 160, 820 210, 800 260" stroke="#ffd9a0" stroke-width="1.5" opacity="0.2" fill="none" stroke-linecap="round"/>
+
+  <rect width="900" height="550" filter="url(#grain)" opacity="0.5"/>
+</svg>
