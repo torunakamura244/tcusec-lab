@@ -1,68 +1,98 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html>
 <html lang="ja">
 <head>
 <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <title>研究内容 | 中村徹</title>
-<!--[if lt IE 9]>
-<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-<script src="http://ie7-js.googlecode.com/svn/version/2.1(beta4)/IE9.js"></script>
-<![endif]-->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&display=swap" rel="stylesheet">
 <link href="css/style.css" rel="stylesheet" media="all">
 </head>
 <body>
-<div id="container">
-  <header id="header">
-    <h1>東京都市大学　計算機ソフトウェア研究室　セキュリティゼミ</h1>
-    <h1>情報工学部　情報科学科　中村　徹　准教授</h1>
-  </header>
-  <div id="nav_frame">
-    <nav>
-      <ul id="nav1">
+
+<header class="site-header">
+  <div class="header-inner">
+    <div class="brand">
+      <span class="brand-sub">東京都市大学 情報工学部 情報科学科<br>中村 徹 准教授</span>
+    </div>
+    <button class="nav-toggle" id="navToggle" aria-label="メニューを開く" aria-expanded="false">
+      <span></span>
+    </button>
+    <nav class="main-nav" id="mainNav">
+      <ul>
         <li><a href="index.html">ホーム</a></li>
         <li><a href="portfolio.html">経歴等</a></li>
-        <li><a href="research.html">研究内容</a></li>
+        <li><a href="research.html" class="active">研究内容</a></li>
         <li><a href="members.html">メンバー</a></li>
-        <li><a href="https://researchmap.jp/torunakamura244/published_papers">研究業績</a></li>
+        <li><a href="publications.html">研究業績</a></li>
         <li><a href="access.html">アクセス</a></li>
       </ul>
     </nav>
   </div>
-  <div id="main">
-    <h1>研究内容</h1>
-    <h2 class="mt0">秘密計算技術とその応用</h2>
-    <p>
-      秘密計算は、データを秘匿しながら計算を行う技術です。具体的には、データを暗号化したまま計算を行い、結果も暗号化された状態で得ることができます。これにより、データの内容を、
-      計算を代理で行う第三者に知られることなく、安全に処理することが可能です。
-    </p>
-    <p>
-      例えば、複数の企業が共同でプライバシーデータの分析を行いたい場合に、各企業のデータを秘密計算技術を使って暗号化し、そのまま分析を行うことで、データのプライバシーを
-      守りながら共同作業ができます。この技術は、医療データの共有や金融データの分析など、プライバシーが重要な分野で特に注目されています。
-    </p>
-    <p>
-      秘密計算にはいくつかの方法がありますが、代表的なものには次のようなものがあります：
-    </p>
-    <ul>
-	    <li>準同型暗号：暗号化されたデータに対して直接計算を行うことができる技術。</li>
-      <li>マルチパーティ計算（MPC）：複数の参加者がそれぞれのデータを共有せずに共同で計算を行う技術。</li>
-      <li>秘匿回路：暗号化されたデータを使って論理ゲートを構築し、計算を行う技術。</li>
-      <li>TEE（Trusted Execution Environment）：CPU内に安全な領域を作り、その中でデータを暗号化して処理する技術。</li>
-    </ul>
-    
-    <h2>サイバーセキュリティ対策</h2>
-    <p>サイバーセキュリティの研究は、ITシステムやネットワークを保護し、サイバー攻撃からデータとプライバシーを守るための技術と方法を開発・改善することを目的としています。
-      当研究室では現在、特にフィッシング攻撃に対する対策について研究を行っています。フィッシング攻撃は、信頼できる機関を装って偽のメッセージやウェブサイトを使い、
-      個人情報や機密情報を不正に取得しようとするサイバー攻撃です。</p>
+</header>
 
-    <h2>信頼できるWebサービス構築技術</h2>
-    <p>信頼できるWebサービスを構築するためには、情報セキュリティ対策だけでは十分ではありません。ユーザのプライバシーへの配慮や、処理の透明性や公平性などを提供することが
-      必要になってきます。当研究室では、ユーザにわかりやすいプライバシーポリシーの提供方式や、暗号技術を応用した透明性向上技術、新しい公平性概念の検討なども行っています。</p>
-  
+<div class="page-hero">
+  <div class="page-hero-inner">
+    <p class="breadcrumb"><a href="index.html">ホーム</a> / 研究内容</p>
+    <h1>研究内容</h1>
   </div>
 </div>
-<footer>
-  <div id="footer_color">
-    <div id="copy">Copyright &copy; Cis-trans, Inc. All rights reserved.</div>
+
+<section class="section prose">
+
+  <h2>秘密計算技術とその応用</h2>
+  <p>
+    秘密計算は、データを秘匿しながら計算を行う技術です。具体的には、データを暗号化したまま計算を行い、結果も暗号化された状態で得ることができます。これにより、データの内容を、
+    計算を代理で行う第三者に知られることなく、安全に処理することが可能です。
+  </p>
+  <p>
+    例えば、複数の企業が共同でプライバシーデータの分析を行いたい場合に、各企業のデータを秘密計算技術を使って暗号化し、そのまま分析を行うことで、データのプライバシーを
+    守りながら共同作業ができます。この技術は、医療データの共有や金融データの分析など、プライバシーが重要な分野で特に注目されています。
+  </p>
+  <p>秘密計算にはいくつかの方法がありますが、代表的なものには次のようなものがあります：</p>
+  <ul>
+    <li>準同型暗号：暗号化されたデータに対して直接計算を行うことができる技術。</li>
+    <li>マルチパーティ計算（MPC）：複数の参加者がそれぞれのデータを共有せずに共同で計算を行う技術。</li>
+    <li>秘匿回路：暗号化されたデータを使って論理ゲートを構築し、計算を行う技術。</li>
+    <li>TEE（Trusted Execution Environment）：CPU内に安全な領域を作り、その中でデータを暗号化して処理する技術。</li>
+  </ul>
+
+  <h2>サイバーセキュリティ対策</h2>
+  <p>
+    サイバーセキュリティの研究は、ITシステムやネットワークを保護し、サイバー攻撃からデータとプライバシーを守るための技術と方法を開発・改善することを目的としています。
+    当研究室では現在、特にフィッシング攻撃に対する対策とSBOM(Software Bill of Materials)を活用したサプライチェーン攻撃への対策について研究を行っています。フィッシング攻撃は、信頼できる機関を装って偽のメッセージやウェブサイトを使い、
+    個人情報や機密情報を不正に取得しようとするサイバー攻撃です。サプライチェーン攻撃とは、ソフトウェアの開発・流通過程で利用される外部の部品や委託先を踏み台にして標的組織に侵入する攻撃であり、SBOMとはソフトウェアを構成するライブラリやOSSなどの部品とそのバージョン情報を一覧化した部品表です。SBOMを用いて自組織が利用するソフトウェアの構成や既知の脆弱性を継続的に把握するように活用することにより、サプライチェーン攻撃の防止に役立ちます。
+  </p>
+
+  <h2>信頼できるWebサービス構築技術</h2>
+  <p>
+    信頼できるWebサービスを構築するためには、情報セキュリティ対策だけでは十分ではありません。ユーザのプライバシーへの配慮や、処理の透明性や公平性などを提供することが
+    必要になってきます。当研究室では、ユーザにわかりやすいプライバシーポリシーの提供方式や、暗号技術を応用した透明性向上技術、新しい公平性概念の検討なども行っています。さらに、SNS上での誤情報の拡散や世論誘導といった問題にも取り組んでおり、情報の信憑性を検証する技術や、不自然な情報拡散パターンを検知・対策する手法についても研究を進めています。
+  </p>
+
+  <h2>AIセキュリティ</h2>
+  <p>
+    近年、大規模言語モデル(LLM)をはじめとする生成AIの急速な普及により、業務や日常生活のさまざまな場面で活用が進んでいますが、それに伴い新たなセキュリティ・プライバシー上の課題も顕在化しています。当研究室では、学習済みモデルから訓練データに含まれる機密情報や個人情報を復元・推定する攻撃(メンバーシップ推論攻撃やモデル反転攻撃など)に関する研究を行っています。また、MCP(Model Context Protocol)サーバのセキュリティをはじめとする、生成AI特有の新たなセキュリティ課題への対策についても取り組んでいます。
+  </p>
+
+</section>
+
+
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div>東京都市大学 情報工学部 情報科学科<br>中村 徹 准教授</div>
   </div>
 </footer>
+
+<script>
+  var navToggle = document.getElementById('navToggle');
+  var mainNav = document.getElementById('mainNav');
+  navToggle.addEventListener('click', function () {
+    var isOpen = mainNav.classList.toggle('open');
+    navToggle.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+  });
+</script>
+
 </body>
 </html>

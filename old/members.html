@@ -1,67 +1,65 @@
-<!DOCTYPE html>
+<!DOCTYPE HTML>
 <html lang="ja">
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
 <title>メンバー | 中村徹</title>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&display=swap" rel="stylesheet">
+<!--[if lt IE 9]>
+<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<script src="http://ie7-js.googlecode.com/svn/version/2.1(beta4)/IE9.js"></script>
+<![endif]-->
 <link href="css/style.css" rel="stylesheet" media="all">
 </head>
 <body>
-
-<header class="site-header">
-  <div class="header-inner">
-    <div class="brand">
-      <span class="brand-sub">東京都市大学 情報工学部 情報科学科<br>中村 徹 准教授</span>
-    </div>
-    <button class="nav-toggle" id="navToggle" aria-label="メニューを開く" aria-expanded="false">
-      <span></span>
-    </button>
-    <nav class="main-nav" id="mainNav">
-      <ul>
+<div id="container">
+  <header id="header">
+    <h1>東京都市大学　計算機ソフトウェア研究室　セキュリティゼミ</h1>
+    <h1>情報工学部　情報科学科　中村　徹　准教授</h1>
+  </header>
+  <div id="nav_frame">
+    <nav>
+      <ul id="nav1">
         <li><a href="index.html">ホーム</a></li>
         <li><a href="portfolio.html">経歴等</a></li>
         <li><a href="research.html">研究内容</a></li>
-        <li><a href="members.html" class="active">メンバー</a></li>
-        <li><a href="publications.html">研究業績</a></li>
+        <li><a href="members.html">メンバー</a></li>
+        <li><a href="https://researchmap.jp/torunakamura244/published_papers">研究業績</a></li>
         <li><a href="access.html">アクセス</a></li>
-      </ul>
-    </nav>
+      </ul>    </nav>
   </div>
-</header>
-
-<div class="page-hero">
-  <div class="page-hero-inner">
-    <p class="breadcrumb"><a href="index.html">ホーム</a> / メンバー</p>
+  <div id="main">
     <h1>メンバー</h1>
-  </div>
-</div>
-
-<section class="section prose">
-
-  <h2>スタッフ</h2>
-  <div class="data-table-wrap">
-    <table class="data-table">
+    <h2 class="mt0">スタッフ</h2>
+    <table class="member">
       <tr>
         <th scope="col">役職</th>
         <th scope="col">名前</th>
+<!--
+        <th scope="col">E-mail</th>
+-->
       </tr>
       <tr>
         <td>准教授</td>
         <td>中村　徹</td>
       </tr>
+      <tr>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
     </table>
-  </div>
-
-  <h2>学生</h2>
-  <div class="data-table-wrap">
-    <table class="data-table">
+    <h2>学生</h2>
+    <table class="member">
       <tr>
         <th scope="col">学年</th>
         <th scope="col">名前</th>
+<!--
+        <th scope="col">E-mail</th>
+-->
       </tr>
+
       <tr>
         <td>M2</td>
         <td>犬飼　陽平</td>
@@ -94,6 +92,7 @@
         <td>M1</td>
         <td>堀　愛華</td>
       </tr>
+      <tr>
       <tr>
         <td>M1</td>
         <td>元波　洋人</td>
@@ -139,13 +138,9 @@
         <td>吉田　勇人</td>
       </tr>
     </table>
-  </div>
-
-  <h2>過去のメンバー</h2>
-
-  <h3>2025年卒業</h3>
-  <div class="data-table-wrap">
-    <table class="data-table">
+    <h2>過去のメンバー</h2>
+    <h3>2025年卒業</h3>
+    <table class="member">
       <tr>
         <th scope="col">学年</th>
         <th scope="col">名前</th>
@@ -187,11 +182,8 @@
         <td>SGXを用いたプライバシ保護型検証技術の高速化</td>
       </tr>
     </table>
-  </div>
-
-  <h3>2024年卒業</h3>
-  <div class="data-table-wrap">
-    <table class="data-table">
+    <h3>2024年卒業</h3>
+    <table class="member">
       <tr>
         <th scope="col">学年</th>
         <th scope="col">名前</th>
@@ -213,25 +205,21 @@
         <td>準同型暗号を用いた秘匿スケジューリングシステム</td>
       </tr>
     </table>
+<!--
+    <ul>
+      <li>過去のメンバーの名前</li>
+      <li>過去のメンバーの名前</li>
+      <li>過去のメンバーの名前</li>
+      <li>過去のメンバーの名前</li>
+      <li>過去のメンバーの名前</li>
+    </ul>
+-->
   </div>
-
-</section>
-
-
-<footer class="site-footer">
-  <div class="footer-inner">
-    <div>東京都市大学 情報工学部 情報科学科<br>中村 徹 准教授</div>
+</div>
+<footer>
+  <div id="footer_color">
+    <div id="copy">Copyright &copy; Cis-trans, Inc. All rights reserved.</div>
   </div>
 </footer>
-
-<script>
-  var navToggle = document.getElementById('navToggle');
-  var mainNav = document.getElementById('mainNav');
-  navToggle.addEventListener('click', function () {
-    var isOpen = mainNav.classList.toggle('open');
-    navToggle.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
-  });
-</script>
-
 </body>
 </html>

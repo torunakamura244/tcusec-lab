@@ -1,88 +1,104 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html>
 <html lang="ja">
 <head>
 <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <title>経歴等 | 中村徹</title>
-<!--[if lt IE 9]>
-<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-<script src="http://ie7-js.googlecode.com/svn/version/2.1(beta4)/IE9.js"></script>
-<![endif]-->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&display=swap" rel="stylesheet">
 <link href="css/style.css" rel="stylesheet" media="all">
 </head>
 <body>
-<div id="container">
-  <header id="header">
-    <h1>東京都市大学　計算機ソフトウェア研究室　セキュリティゼミ</h1>
-    <h1>情報工学部　情報科学科　中村　徹　准教授</h1>
-  </header>
-  <div id="nav_frame">
-    <nav>
-      <ul id="nav1">
+
+<header class="site-header">
+  <div class="header-inner">
+    <div class="brand">
+      <span class="brand-sub">東京都市大学 情報工学部 情報科学科<br>中村 徹 准教授</span>
+    </div>
+    <button class="nav-toggle" id="navToggle" aria-label="メニューを開く" aria-expanded="false">
+      <span></span>
+    </button>
+    <nav class="main-nav" id="mainNav">
+      <ul>
         <li><a href="index.html">ホーム</a></li>
-        <li><a href="portfolio.html">経歴等</a></li>
+        <li><a href="portfolio.html" class="active">経歴等</a></li>
         <li><a href="research.html">研究内容</a></li>
         <li><a href="members.html">メンバー</a></li>
-        <li><a href="https://researchmap.jp/torunakamura244/published_papers">研究業績</a></li>
+        <li><a href="publications.html">研究業績</a></li>
         <li><a href="access.html">アクセス</a></li>
-
       </ul>
     </nav>
   </div>
-  <div id="main">
+</header>
+
+<div class="page-hero">
+  <div class="page-hero-inner">
+    <p class="breadcrumb"><a href="index.html">ホーム</a> / 経歴等</p>
     <h1>経歴等</h1>
-
-    <h2 class="mt0">学歴</h2>
-    <ul>
-	    <li>2006年3月：九州大学 工学部 電気情報工学科　卒業</li>
-      <li>2008年3月：九州大学 大学院 システム情報科学府 情報工学専攻 博士前期課程　修了（工学）</li>
-      <li>2011年3月：九州大学 工学部 システム情報科学府 情報工学専攻 博士後期課程　修了（工学）</li>
-    </ul>
-    <br>
-
-    <h2 class="mt0">職歴</h2>
-    <ul>
-	    <li>2011年4月：KDDI株式会社　入社</li>
-      <li>2011年11月：株式会社KDDI研究所（現在のKDDI総合研究所）　出向</li>
-      <li>2018年4月：株式会社国際電気通信基礎技術研究所（ATR）　出向</li>
-      <li>2020年4月：株式会社KDDI総合研究所　出向</li>
-      <li>2024年4月：東京都市大学 情報工学部 情報科学科 准教授　就任</li>
-    </ul>
-    <br>
-
-    <h2 class="mt0">所属学会</h2>
-    <ul>
-	    <li>2007年4月 ～ 現在：情報処理学会</li>
-	    <li>2012年9月 ～ 現在：電子情報通信学会</li>
-    </ul>
-    <br>
-
-    <h2 class="mt0">学会活動</h2>
-    <ul>
-      <li>2014年6月 ～ 2018年6月：電子情報通信学会英文論文誌D編集委員</li>
-	    <li>2015年4月 ～ 2015年11月：The 9th International Conference on Provable Security (ProvSec2015) 実行委員, 金沢, 2015年11月24日～2015年11月26日</li>
-	    <li>2017年4月 ～ 2017年7月：The 15th International Conference on Applied Cryptography and Network Security (ACNS2017)実行委員, 金沢, 2017年7月10日～2017年7月12日</li>
-      <li>2019年4月 ～ 2020年3月：情報ネットワーク研究専門委員会</li>
-      <li>2019年4月 ～ 2020年1月：暗号と情報セキュリティシンポジウム（SCIS2020)実行委員, 高知, 2020年1月28日～2020年1月31日</li>
-      <li>2020年6月 ～ 2024年6月：電子情報通信学会和文論文誌A編集委員</li>
-      <li>2020年6月 ～ 2024年6月：電子情報通信学会英文論文誌A編集委員</li>
-    </ul>
-    <br>
-
-    <h2 class="mt0">受賞歴</h2>
-    <ul>
-      <li>2016年10月：コンピュータセキュリティシンポジウム 2016 (CSS2016) SPT論文賞</li>
-      <li>2018年4月：The Web Conference 2018 (WWW2018) Best Demo Award（共著）</li>
-      <li>2021年4月：第66回前島密賞</li>
-      <li>2022年6月：The 17th ACM ASIA Conference on Computer and Communications Security (ACM ASIACCS 2022) Best Poster Award（共著）</li>
-    </ul>
-    <br>
-
   </div>
 </div>
-<footer>
-  <div id="footer_color">
-    <div id="copy">Copyright &copy; Cis-trans, Inc. All rights reserved.</div>
+
+<section class="section prose">
+
+  <h2>学歴</h2>
+  <ul>
+    <li>2006年3月：九州大学 工学部 電気情報工学科　卒業</li>
+    <li>2008年3月：九州大学 大学院 システム情報科学府 情報工学専攻 博士前期課程　修了（工学）</li>
+    <li>2011年3月：九州大学 工学部 システム情報科学府 情報工学専攻 博士後期課程　修了（工学）</li>
+  </ul>
+
+  <h2>職歴</h2>
+  <ul>
+    <li>2011年4月：KDDI株式会社　入社</li>
+    <li>2011年11月：株式会社KDDI研究所（現在のKDDI総合研究所）　出向</li>
+    <li>2018年4月：株式会社国際電気通信基礎技術研究所（ATR）　出向</li>
+    <li>2020年4月：株式会社KDDI総合研究所　出向</li>
+    <li>2024年4月：東京都市大学 情報工学部 情報科学科 准教授　就任</li>
+  </ul>
+
+  <h2>所属学会</h2>
+  <ul>
+    <li>2007年4月 ～ 現在：情報処理学会</li>
+    <li>2012年9月 ～ 現在：電子情報通信学会</li>
+  </ul>
+
+  <h2>学会活動</h2>
+  <ul>
+    <li>2014年6月 ～ 2018年6月：電子情報通信学会英文論文誌D編集委員</li>
+    <li>2015年4月 ～ 2015年11月：The 9th International Conference on Provable Security (ProvSec2015) 実行委員, 金沢, 2015年11月24日～2015年11月26日</li>
+    <li>2017年4月 ～ 2017年7月：The 15th International Conference on Applied Cryptography and Network Security (ACNS2017)実行委員, 金沢, 2017年7月10日～2017年7月12日</li>
+    <li>2019年4月 ～ 2020年3月：情報ネットワーク研究専門委員会</li>
+    <li>2019年4月 ～ 2020年1月：暗号と情報セキュリティシンポジウム（SCIS2020)実行委員, 高知, 2020年1月28日～2020年1月31日</li>
+    <li>2020年6月 ～ 2024年6月：電子情報通信学会和文論文誌A編集委員</li>
+    <li>2020年6月 ～ 2024年6月：電子情報通信学会英文論文誌A編集委員</li>
+  </ul>
+
+  <h2>受賞歴</h2>
+  <ul>
+    <li>2016年10月：コンピュータセキュリティシンポジウム 2016 (CSS2016) SPT論文賞</li>
+    <li>2018年4月：The Web Conference 2018 (WWW2018) Best Demo Award（共著）</li>
+    <li>2021年4月：第66回前島密賞</li>
+    <li>2022年6月：The 17th ACM ASIA Conference on Computer and Communications Security (ACM ASIACCS 2022) Best Poster Award（共著）</li>
+  </ul>
+
+</section>
+
+
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div>東京都市大学 情報工学部 情報科学科<br>中村 徹 准教授</div>
   </div>
 </footer>
+
+<script>
+  var navToggle = document.getElementById('navToggle');
+  var mainNav = document.getElementById('mainNav');
+  navToggle.addEventListener('click', function () {
+    var isOpen = mainNav.classList.toggle('open');
+    navToggle.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+  });
+</script>
+
 </body>
 </html>
